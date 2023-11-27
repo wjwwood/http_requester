@@ -1,0 +1,11 @@
+string method "GET"  # one of GET (default) or POST
+string url  # url, e.g. www.example.com/path?key1=value1&?key2=value2
+string payload  # optional payload that is sent during a POST request
+
+---
+
+# HTTP status code returned, e.g. 200 for OK.
+# A value of 0 indicates a problem making the reqeust.
+# In the case of an error, the error details will be in the response field.
+int32 status_code
+string response  # non-encoded text response
